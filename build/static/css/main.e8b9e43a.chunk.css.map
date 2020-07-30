@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,EACI,wBAA4B,CAC5B,UACJ,CAEA,IACI,YAAa,CACb,WACJ,CAEA,KACI,WACJ","file":"main.e8b9e43a.chunk.css","sourcesContent":["* {\n    background-color: blueviolet;\n    color: white;\n}\n\nimg {\n    height: 450px;\n    width: 500px;\n}\n\n.btn {\n    margin: 10px;\n}\n\n\n"]}

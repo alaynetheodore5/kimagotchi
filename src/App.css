@@ -1,15 +1,32 @@
 * {
-    background-color: blueviolet;
     color: white;
 }
 
 img {
     height: 450px;
     width: 500px;
+    margin-right: 15%;
 }
 
 .btn {
     margin: 10px;
 }
 
+.dashboard {
+    background-image: url(/Images/goldborder.png);
+    background-color: blueviolet;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.stats {
+    margin-left: 10%;
+}
+
+.rules h5{
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}

@@ -6,17 +6,24 @@ const DisplayTamagotchi = props => {
     return (
         <div className="display">
             <div className="row">
-                <div className="col my-5">
-                    <h1>Kim's Stats:</h1>
+                <div className="col my-5 stats">
+                    <h1 className="mt-4">Kim's Stats:</h1>
                     <h5>Fullness: {props.fullness}</h5>
                     <h5>Happiness: {props.happiness}</h5>
                     <h5>Energy: {props.energy}</h5>
                     <h5>Meals: {props.meals}</h5>
-                    <h1>{props.message}</h1>
+                    <br/>
+                    <h5>A message from Kim:</h5>
+                    <h3>{props.message}</h3>
                 </div>
                 <div className="col my-5">
-                    <img src={props.image} alt=""/>
+                    <img src={props.image} className="rounded" alt=""/>
                 </div>
+                
+            </div>
+            <div className="my-5 rules">
+                <h5>Rules:</h5>
+                <h5>Take care of Kim K- make sure she is fed, happy and has enough energy. If any of these fall below 0, you lose!</h5>
             </div>
         </div>
     )
@@ -155,7 +162,7 @@ const Tamagotchi = props => {
     }
 
     return (
-        <div className="dashboard">
+        <div className="main">
             <DisplayTamagotchi 
                 fullness={fullness}
                 happiness={happiness}
@@ -169,7 +176,7 @@ const Tamagotchi = props => {
                 <div>
                     <button className="btn btn-dark" onClick = {reset} >Reset</button>
                 </div> : 
-                <div>
+                <div className="text-center">
                     <button className="btn btn-dark" onClick = {work} >Work</button>
                     <button className="btn btn-dark" onClick = {sleep} >Sleep</button>
                     <button className="btn btn-dark" onClick = {feed} >Eat</button>
